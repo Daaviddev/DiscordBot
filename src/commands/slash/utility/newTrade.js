@@ -3,13 +3,12 @@ const {
   ActionRowBuilder,
   ButtonBuilder,
   EmbedBuilder,
-  ButtonStyle,
 } = require('discord.js');
 
 module.exports = {
   structure: new SlashCommandBuilder()
     .setName('new_trade_setup')
-    .setDescription('Initiates a new trade setup'),
+    .setDescription('Initiates a new trade'),
 
   run: async (_client, interaction) => {
     const embed = new EmbedBuilder()
